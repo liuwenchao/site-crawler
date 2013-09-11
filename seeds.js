@@ -5,7 +5,8 @@
  */
 var Seeds = function(prefix, postfix) {
   this.chars = [];
- 
+  this.prefix = prefix;
+  this.postfix = postfix;
   push_chars("a","z", this.chars);
   push_chars("0","9", this.chars);
   this.chars.push('-');
@@ -25,6 +26,7 @@ function push_chars(first, last, chars) {
 
 function push_char(url, urls, size, chars, prefix, postfix) {
   if (url.length >= size) {
+    debugger;
     return urls;
   }
   
@@ -33,9 +35,10 @@ function push_char(url, urls, size, chars, prefix, postfix) {
     if (url.length == size) {
       urls.push([prefix].concat(url, postfix).join(''));
     } else {
-      push_char(url, urls, size, chars);
+      push_char(url, urls, size, chars, prefix, postfix);
     }
     url.pop();
   });
+
   return urls;
 };

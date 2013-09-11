@@ -1,11 +1,14 @@
 // change url_length to generate different sites titles.
 
-;var url_length = 1;
+;var 
+ url_length = 1,
+    prefix  = "http://",
+    postfix = ".com";
 
 var Crawler = require("crawler").Crawler,
     fs      = require("fs"),
     Seeds   = require("./seeds.js"),
-    seeds   = new Seeds("http://", ".com"),
+    seeds   = new Seeds(prefix, postfix),
     dataset = [],
     start   = new Date();
 var c = new Crawler({
@@ -22,7 +25,7 @@ var c = new Crawler({
     }
 
     //have no head title.
-    if ($("head title").length == 0) {
+    if (!$ || $("head title").length == 0) {
       data.success=true;
       return;
     }
@@ -52,7 +55,7 @@ var c = new Crawler({
   }
 });
 seeds.generate(url_length).forEach(function(url){
-  c.queue('http://'+url+'.com');
+  c.queue(url);
 });
 
 //c.queue('http://www.github.com');
