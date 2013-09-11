@@ -1,247 +1,5 @@
 [
     {
-        "uri": "http://a.com",
-        "keywords": [
-            "a"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://c.com",
-        "keywords": [
-            "c"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://b.com",
-        "keywords": [
-            "b"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://f.com",
-        "keywords": [
-            "f"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://h.com",
-        "keywords": [
-            "h"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://e.com",
-        "keywords": [
-            "e"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://g.com",
-        "keywords": [
-            "g"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://d.com",
-        "keywords": [
-            "d"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://i.com",
-        "keywords": [
-            "i"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://j.com",
-        "keywords": [
-            "j"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://k.com",
-        "keywords": [
-            "k"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://l.com",
-        "keywords": [
-            "l"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://m.com",
-        "keywords": [
-            "m"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://o.com",
-        "keywords": [
-            "o"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://n.com",
-        "keywords": [
-            "n"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://p.com",
-        "keywords": [
-            "p"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://r.com",
-        "keywords": [
-            "r"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://s.com",
-        "keywords": [
-            "s"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://t.com",
-        "keywords": [
-            "t"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://u.com",
-        "keywords": [
-            "u"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://v.com",
-        "keywords": [
-            "v"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://w.com",
-        "keywords": [
-            "w"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://y.com",
-        "keywords": [
-            "y"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://1.com",
-        "keywords": [
-            "1"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://0.com",
-        "keywords": [
-            "0"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://2.com",
-        "keywords": [
-            "2"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://3.com",
-        "keywords": [
-            "3"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://4.com",
-        "keywords": [
-            "4"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://5.com",
-        "keywords": [
-            "5"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://6.com",
-        "keywords": [
-            "6"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://7.com",
-        "keywords": [
-            "7"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://8.com",
-        "keywords": [
-            "8"
-        ],
-        "success": true
-    },
-    {
-        "uri": "http://q.com",
-        "keywords": [
-            "CenturyLink",
-            "Local",
-            "Provider",
-            "of",
-            "High",
-            "Speed",
-            "Internet,",
-            "Phone,",
-            "Mobile",
-            "TV",
-            "Services"
-        ],
-        "title": "CenturyLink | Local Provider of High Speed Internet, Phone, Mobile & TV Services",
-        "success": true
-    },
-    {
         "uri": "http://x.com",
         "keywords": [
             "Welcome",
@@ -253,18 +11,275 @@
         "success": true
     },
     {
+        "uri": "http://c.com",
+        "keywords": [
+            "c"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://b.com",
+        "keywords": [
+            "b"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://a.com",
+        "keywords": [
+            "a"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://f.com",
+        "keywords": [
+            "f"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://e.com",
+        "keywords": [
+            "e"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://h.com",
+        "keywords": [
+            "h"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://d.com",
+        "keywords": [
+            "d"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://g.com",
+        "keywords": [
+            "g"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://i.com",
+        "keywords": [
+            "i"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://j.com",
+        "keywords": [
+            "j"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://k.com",
+        "keywords": [
+            "k"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://l.com",
+        "keywords": [
+            "l"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://m.com",
+        "keywords": [
+            "m"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://n.com",
+        "keywords": [
+            "n"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://o.com",
+        "keywords": [
+            "o"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://p.com",
+        "keywords": [
+            "p"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://r.com",
+        "keywords": [
+            "r"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://s.com",
+        "keywords": [
+            "s"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://t.com",
+        "keywords": [
+            "t"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://u.com",
+        "keywords": [
+            "u"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://v.com",
+        "keywords": [
+            "v"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://w.com",
+        "keywords": [
+            "w"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://y.com",
+        "keywords": [
+            "y"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://0.com",
+        "keywords": [
+            "0"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://1.com",
+        "keywords": [
+            "1"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://2.com",
+        "keywords": [
+            "2"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://3.com",
+        "keywords": [
+            "3"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://4.com",
+        "keywords": [
+            "4"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://5.com",
+        "keywords": [
+            "5"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://6.com",
+        "keywords": [
+            "6"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://7.com",
+        "keywords": [
+            "7"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://8.com",
+        "keywords": [
+            "8"
+        ],
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
         "uri": "http://9.com",
         "keywords": [
             "9"
         ],
-        "success": true
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
     },
     {
         "uri": "http://-.com",
         "keywords": [
             "-"
         ],
-        "error": "Error: getaddrinfo EADDRINFO",
+        "error": "Error: getaddrinfo ENOTFOUND",
         "success": false
     },
     {
@@ -272,7 +287,15 @@
         "keywords": [
             "z"
         ],
-        "error": "Error: getaddrinfo EADDRINFO",
+        "error": "Error: getaddrinfo ENOTFOUND",
+        "success": false
+    },
+    {
+        "uri": "http://q.com",
+        "keywords": [
+            "q"
+        ],
+        "error": "Error: ETIMEDOUT",
         "success": false
     }
 ]
