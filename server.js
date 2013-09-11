@@ -1,32 +1,40 @@
 // change url_length to generate different sites titles.
-
+// 2.json took  825.978 seconds.
 ;var 
- url_length = 1,
+    url_length = 1,
     prefix  = "http://",
-    postfix = ".com";
+    postfix = ".com",
+    file    = './data/'+url_length+'.json';
 
 var Crawler = require("crawler").Crawler,
     fs      = require("fs"),
     Seeds   = require("./seeds.js"),
     seeds   = new Seeds(prefix, postfix),
-    dataset = [],
+    //dataset = [],
     start   = new Date();
+
+//clean up the target file.
+fs.truncate(file);
+fs.appendFile(file, "{\"results\":[");
+
 var c = new Crawler({
   "maxConnections":10,
   "timeout":5000,
   // This will be called for each crawled page
   "callback":function(error,response,$) {
     var data={"uri": this.uri, "keywords": [this.uri.substr(7, url_length)]};
-    dataset.push(data);
+    //dataset.push(data);
     if (error) {
       data.error = error.toString();
       data.success = false;
+      save(data);
       return;
     }
 
     //have no head title.
-    if (!$ || $("head title").length == 0) {
+    if (!$ || $("head title").length === 0) {
       data.success=true;
+      save(data);
       return;
     }
 
@@ -41,21 +49,34 @@ var c = new Crawler({
         }
     });
 
+    var time = (new Date().getTime() - start.getTime())/1000;
+    console.log(time + " seconds passed");
+    save(data);
   },
   "onDrain": function() { 
-    var file = './data/'+url_length+'.json';
-    fs.writeFile(file, JSON.stringify(dataset, null, 4), function(err){
+    console.log(file + ' was saved');
+    var time = (new Date().getTime() - start.getTime())/1000;
+    fs.appendFile(file, "{}],\"status\":"+JSON.stringify({
+      "url_length": url_length, 
+      "start": start, 
+      "time": time}, null, 4)+"}", function(err){
       if (err) {
         throw err;
       }
-      console.log(file + ' is saved');
-      var time = (new Date().getTime() - start.getTime())/1000;
-      console.log('took ' + time + ' seconds');
     });
+    console.log('took ' + time + ' seconds');
   }
 });
 seeds.generate(url_length).forEach(function(url){
   c.queue(url);
 });
+
+function save(data) { 
+  fs.appendFile(file, JSON.stringify(data, null, 2)+",", function(err){
+    if (err) {
+      throw err;
+    }
+  });
+}
 
 //c.queue('http://www.github.com');
