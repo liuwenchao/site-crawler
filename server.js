@@ -15,7 +15,7 @@ var Crawler = require("crawler").Crawler,
 
 //clean up the target file.
 fs.truncate(file);
-fs.appendFile(file, "{\"results\":[");
+fs.appendFile(file, "{\"results\":[\n");
 
 var c = new Crawler({
   "maxConnections":10,
@@ -72,7 +72,7 @@ seeds.generate(url_length).forEach(function(url){
 });
 
 function save(data) { 
-  fs.appendFile(file, JSON.stringify(data, null, 2)+",", function(err){
+  fs.appendFile(file, JSON.stringify(data, null, 0)+",\n", function(err){
     if (err) {
       throw err;
     }
