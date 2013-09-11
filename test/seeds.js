@@ -1,5 +1,6 @@
 var assert = require("assert"),
-    seeds  = require("../seeds.js");
+    Seeds  = require("../seeds.js"),
+    seeds  = new Seeds();
     
 describe('Seeds', function() {
   describe('size of', function() {

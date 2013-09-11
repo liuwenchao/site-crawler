@@ -1,5 +1,9 @@
 ;
-var Seeds = function() {
+/**
+ * prefix: like http://
+ * postfix: like .com
+ */
+var Seeds = function(prefix, postfix) {
   this.chars = [];
  
   push_chars("a","z", this.chars);
@@ -7,11 +11,11 @@ var Seeds = function() {
   this.chars.push('-');
 
   this.generate = function(size) {
-    return push_char([], [], size, this.chars);
+    return push_char([], [], size, this.chars, this.prefix, this.postfix);
   };
 };
 
-exports = module.exports = new Seeds();
+exports = module.exports = Seeds;
 
 function push_chars(first, last, chars) {
   for(var i = first.charCodeAt(0); i <= last.charCodeAt(0); i++) {
@@ -19,7 +23,7 @@ function push_chars(first, last, chars) {
   }
 }
 
-function push_char(url, urls, size, chars) {
+function push_char(url, urls, size, chars, prefix, postfix) {
   if (url.length >= size) {
     return urls;
   }
@@ -27,7 +31,7 @@ function push_char(url, urls, size, chars) {
   chars.forEach(function(e) {
     url.push(e);
     if (url.length == size) {
-      urls.push(url.join(''));
+      urls.push([prefix].concat(url, postfix).join(''));
     } else {
       push_char(url, urls, size, chars);
     }
