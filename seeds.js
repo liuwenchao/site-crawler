@@ -1,4 +1,5 @@
-;exports = module.exports = Seeds = function() {
+;
+var Seeds = function() {
   this.chars = [];
  
   push_chars("a","z", this.chars);
@@ -10,6 +11,7 @@
   };
 };
 
+exports = module.exports = new Seeds();
 
 function push_chars(first, last, chars) {
   for(var i = first.charCodeAt(0); i <= last.charCodeAt(0); i++) {
