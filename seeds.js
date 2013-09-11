@@ -1,20 +1,4 @@
-;/*function Seeds(){
-  this.chars = [];
- 
-  push_chars("a","z", this.chars);
-  push_chars("0","9", this.chars);
-  this.chars.push('-');
-
-  //console.log(chars);
-  this.generate = function(size) {
-    var urls = push_char([], [], size, this.chars);
-    
-    return urls;
-  };
-};
-
-*/
-exports = module.exports = Seeds = function() {
+;exports = module.exports = Seeds = function() {
   this.chars = [];
  
   push_chars("a","z", this.chars);

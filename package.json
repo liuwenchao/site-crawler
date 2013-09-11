@@ -2,8 +2,39 @@
   "name": "site-crawler",
   "description": "A crawler that crawl only the first page of the sites.",
   "version": "0.0.1",
+  "author": "Louis <louis.wenchao.liu@gmail.com>",
+  "contributors": [ 
+  ],
+  "bin": {
+    "http-server": "./bin/http-server"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/liuwenchao/site-crawler.git"
+  },
+  "dependencies": {
+    "crawler":"*"
+  },
+  "devDependencies": {
+    "mocha":"*"
+  }
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/http-server",
+    "test": "make test",
+    "predeploy": "echo This will be run before deploying the app",
+    "postdeploy": "echo This will be run after deploying the app"
+  },
+  "main": "./lib/http-server",
+  "keywords": [
+    "site",
+    "crawler"
+  ],
+  "analyze": false,
+  "bundledDependencies": [
+  ],  
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10.18"
   }
 }
