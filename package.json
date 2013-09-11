@@ -1,0 +1,9 @@
+{
+  "name": "site-crawler",
+  "description": "A crawler that crawl only the first page of the sites.",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liuwenchao/site-crawler.git"
+  }
+}
